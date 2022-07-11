@@ -62,3 +62,14 @@ input#name1, input#name2, input#turn, input#days {
     font-size: 12px;
     width: 85px;
 }
+
+.dispo {
+    justify-content: space-around;
+    display: flex;
+}
+
+button.btn.btn-success.circle {
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+}

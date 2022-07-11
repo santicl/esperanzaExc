@@ -105,7 +105,7 @@ const readSend = () => {
         const name2 = document.getElementById('name2').value;
         const turn = document.getElementById('turn').value;
 
-        const URL = 'https://api.whatsapp.com/send?phone=573045371882&text=Deseo%20apartar%20un%20cupo%20con%20' + name1 + '%20y%20' + name2 + '%20para%20' + turn + '%20para%20el%20dia%20' + document.getElementById('day').value;
+        const URL = 'https://api.whatsapp.com/send?phone=573022434705&text=Deseo%20apartar%20un%20cupo%20con%20' + name1 + '%20y%20' + name2 + '%20para%20' + turn + '%20para%20el%20dia%20' + document.getElementById('day').value;
         window.location.href = URL;
         closePop();
     })
