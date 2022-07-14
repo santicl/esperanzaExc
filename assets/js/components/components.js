@@ -103,7 +103,7 @@ const showPopup = () => {
       <label for="">Ingrese el nombre de su acompañante</label>
       <input id="name2" type="text" name="nombre acompañante" placeholder="Nombre Acompañante">
       <label>Ingrese el dia
-      <input class="form-control" id="days" placeholder="Elige tu Dia..." list="day" name="listDays" required>
+      <input class="form-control" id="days-data" placeholder="Elige tu Dia..." list="day" name="listDays" required>
     </label>
     <datalist id="day">
       <option value="Lunes">
@@ -136,7 +136,7 @@ const readSend = () => {
         const turn = document.getElementById('turn').value;
         const getNumber = 3022434705;
 
-        const URL = 'https://api.whatsapp.com/send?phone=57' + getNumber + '&text=Deseo%20apartar%20un%20cupo%20con%20' + name1 + '%20y%20' + name2 + '%20para%20' + turn + '%20para%20el%20dia%20' + document.getElementById('day').value;
+        const URL = 'https://api.whatsapp.com/send?phone=57' + getNumber + '&text=Deseo%20apartar%20un%20cupo%20con%20' + name1 + '%20y%20' + name2 + '%20para%20' + turn + '%20para%20el%20dia%20' + document.getElementById('days-data').value;
         window.location.href = URL;
         closePop();
     })
